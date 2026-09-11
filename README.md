@@ -2,9 +2,11 @@
 
 An experimental, mathematical, local-first portfolio and blog architecture. 
 
-Rather than using an opaque algorithm or a hidden backend database to organize your writing, this site uses visible, mathematical mechanics. The interface is a literal readout of the data underneath. There is no build step, no framework, and no database. The site is driven entirely by static Markdown files and a simple JSON manifest.
+This engine was originally designed and built as the custom, personal portfolio and blog for [Jonathan J. Wagner](https://jonathanjwagner.alien.engineer). Because the architecture is entirely serverless, database-free, and relies purely on visible mathematical mechanics to organize content, it has been open-sourced here as a blank-slate template for others to tinker with, customize, and deploy for their own purposes.
 
-**[View a live DEMO of a fully customized deployment here](https://jonathanjwagner.alien.engineer)**
+Rather than using an opaque algorithm or a hidden backend database to organize your writing, this site provides a literal readout of the data underneath. There is no build step, no framework, and no database. The site is driven entirely by static Markdown files and a simple JSON manifest.
+
+**[View the live DEMO of the original, fully customized deployment here](https://jonathanjwagner.alien.engineer)**
 
 ## Form and Function
 

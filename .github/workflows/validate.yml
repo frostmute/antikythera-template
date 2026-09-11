@@ -1,0 +1,26 @@
+name: Validate content
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  frontmatter:
+    name: Frontmatter and manifest
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # The site has no build step — content is parsed in the browser at
+      # runtime, so a malformed entry would deploy green and fail silently.
+      # This is the compile step that would otherwise not exist.
+      - name: Validate frontmatter and manifest
+        run: node tools/validate-content.mjs

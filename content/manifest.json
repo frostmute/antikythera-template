@@ -1,0 +1,39 @@
+{
+  "operator": {
+    "name": "YOUR NAME HERE",
+    "station": "Station Coordinates",
+    "lede": "A short introductory biography describing your background and what you do.",
+    "email": "hello@example.com",
+    "skills": [
+      "Skill One",
+      "Skill Two",
+      "Skill Three",
+      "Skill Four"
+    ]
+  },
+  "spheres": [
+    {
+      "id": "mechane",
+      "label": "MECHANE",
+      "gloss": "Instruments \u2014 things built to be used",
+      "radius": 352
+    },
+    {
+      "id": "ephemeris",
+      "label": "EPHEMERIS",
+      "gloss": "Field notes \u2014 observations taken in transit",
+      "radius": 262
+    },
+    {
+      "id": "mnemosyne",
+      "label": "MNEMOSYNE",
+      "gloss": "Reliquary \u2014 longer essays, kept",
+      "radius": 174
+    }
+  ],
+  "entries": [
+    "example-instrument.md",
+    "example-note.md",
+    "example-essay.md"
+  ]
+}

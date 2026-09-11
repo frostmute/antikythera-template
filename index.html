@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" data-theme="umbra">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Antikythera — Jonathan Wagner</title>
+    <meta
+      name="description"
+      content="The working notebook and instrument shelf of Jonathan Wagner: Obsidian plugins, local-first tools, agent architecture, and longer essays on measurement and decay."
+    />
+    <meta property="og:title" content="Antikythera — Jonathan Wagner" />
+    <meta
+      property="og:description"
+      content="Instruments, field notes, and a reliquary. Navigated by dial."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="color-scheme" content="dark light" />
+
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=gambetta@400,500,600&f[]=erode@400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0b0a'/%3E%3Cg fill='none' stroke='%23c8963c' stroke-width='1.6'%3E%3Ccircle cx='16' cy='16' r='10.5'/%3E%3Ccircle cx='16' cy='16' r='3.5'/%3E%3Cpath d='M16 1.5v6M16 24.5v6'/%3E%3C/g%3E%3C/svg%3E"
+    />
+
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#view">Skip to content</a>
+
+    <canvas id="dust" aria-hidden="true"></canvas>
+    <div id="reticle" aria-hidden="true">
+      <svg viewBox="0 0 40 40" width="40" height="40">
+        <circle cx="20" cy="20" r="11" />
+        <path d="M20 0v7M20 33v7M0 20h7M33 20h7" />
+      </svg>
+    </div>
+
+    <div id="boot" aria-hidden="true">
+      <div class="boot-inner">
+        <svg class="boot-rings" viewBox="-60 -60 120 120" aria-hidden="true">
+          <circle r="54" />
+          <circle r="41" />
+          <circle r="28" />
+          <circle r="15" />
+          <path d="M0 -58V-6M0 6V58" />
+        </svg>
+        <pre id="boot-log"></pre>
+      </div>
+    </div>
+
+    <header class="chrome" id="chrome-top">
+      <a class="mark" href="#/" aria-label="Antikythera — home">
+        <svg
+          class="mark-glyph"
+          viewBox="0 0 48 48"
+          width="34"
+          height="34"
+          fill="none"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <circle cx="24" cy="24" r="19" stroke-width="1.4" />
+          <circle cx="24" cy="24" r="11.5" stroke-width="1.4" />
+          <circle cx="24" cy="24" r="4" stroke-width="1.4" />
+          <path d="M24 1v10M24 37v10" stroke-width="1.4" />
+          <path
+            d="M43 24h-6M11 24H5M37.4 10.6l-4.2 4.2M14.8 33.2l-4.2 4.2M37.4 37.4l-4.2-4.2M14.8 14.8l-4.2-4.2"
+            stroke-width="1"
+            opacity=".55"
+          />
+        </svg>
+        <span class="mark-text">
+          <strong>ANTIKYTHERA</strong>
+          <em>an instrument of J. Wagner</em>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#/" data-route="dial" class="nav-link"><span>DIAL</span></a>
+        <a href="#/index" data-route="index" class="nav-link"><span>INDEX</span></a>
+        <a href="#/operator" data-route="operator" class="nav-link"><span>OPERATOR</span></a>
+        <button
+          id="theme-toggle"
+          class="icon-btn"
+          type="button"
+          aria-label="Switch to Vellum (light) mode"
+          title="Switch mode"
+        >
+          <span class="theme-name">UMBRA</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="view" tabindex="-1"></main>
+
+    <footer class="chrome chrome-foot">
+      <span class="foot-cell" id="foot-coords">29.4241&deg; N &middot; 98.4936&deg; W</span>
+      <span class="foot-rule" aria-hidden="true"></span>
+      <span class="foot-cell" id="foot-clock">--:--:--</span>
+      <span class="foot-rule" aria-hidden="true"></span>
+      <span class="foot-cell" id="foot-count">0 entries bound</span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" defer></script>
+    <script src="./sigil.js" defer></script>
+    <script src="./ambient.js" defer></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>

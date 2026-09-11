@@ -4,6 +4,8 @@ An experimental, mathematical, local-first portfolio and blog architecture.
 
 Rather than using an opaque algorithm or a hidden backend database to organize your writing, this site uses visible, mathematical mechanics. The interface is a literal readout of the data underneath. There is no build step, no framework, and no database. The site is driven entirely by static Markdown files and a simple JSON manifest.
 
+**[View a live DEMO of a fully customized deployment here](https://jonathanjwagner.alien.engineer)**
+
 ## Form and Function
 
 The site operates like a celestial instrument (inspired by the ancient Antikythera mechanism):

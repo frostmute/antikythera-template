@@ -6,7 +6,7 @@ This engine was originally designed and built as the custom, personal portfolio 
 
 Rather than using an opaque algorithm or a hidden backend database to organize your writing, this site provides a literal readout of the data underneath. There is no build step, no framework, and no database. The site is driven entirely by static Markdown files and a simple JSON manifest.
 
-**[View the live DEMO of the original, fully customized deployment here](https://jonathanjwagner.alien.engineer)**
+**[View the live DEMO of the original, fully customized deployment here](https://jjwagner.vercel.app)**
 
 ![Antikythera dial interface screenshot](assets/readme-screenshot.png)
 

@@ -8,6 +8,8 @@ Rather than using an opaque algorithm or a hidden backend database to organize y
 
 **[View the live DEMO of the original, fully customized deployment here](https://jonathanjwagner.alien.engineer)**
 
+![Antikythera dial interface screenshot](assets/readme-screenshot.png)
+
 ## Form and Function
 
 The site operates like a celestial instrument (inspired by the ancient Antikythera mechanism):
